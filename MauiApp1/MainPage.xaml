@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label
+                Text="Specjalizacja: "/>
+            <Picker x:Name="Specjalizacja" SelectedIndex="1" TextColor="BurlyWood" BackgroundColor="Azure">
+                <Picker.Items>
+                    <x:String>Internista</x:String>
+                    <x:String>Kardiolog</x:String>
+                    <x:String>Dermatolog</x:String>
+                    <x:String>Okulista</x:String>
+                </Picker.Items>
+            </Picker>
+            <Label
+                Text="Podaj datę wizyty: "/>
+            <DatePicker
+                BackgroundColor="Azure"
+                TextColor="BurlyWood"
+                Format="dd MMMM yyyy"
+                MinimumDate="{x:Static sys:DateTime.Today}"
+                        x:Name="Data"/>
+            <Label
+                Text="Podaj godzinę wizyty: "/>
+            <TimePicker
+                BackgroundColor="Azure"
+                x:Name="Godzina"
+                Format="HH:mm"
+                Time="8:00:00"
+                TextColor="BurlyWood"/>
+            <Button
+                Text="Zarezerwuj"
+                BackgroundColor="Azure"
+                TextColor="BurlyWood"
+                Clicked="SubmitButton"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
