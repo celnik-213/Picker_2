@@ -34,8 +34,6 @@ namespace MauiApp1
     }
 }
 
-
-
 /*
     ***********************************************
     nazwa funkcji: SubmitButton
