@@ -33,3 +33,13 @@ namespace MauiApp1
 
     }
 }
+
+/*
+    ***********************************************
+    nazwa funkcji: SubmitButton
+    opis funkcji: Funkcja pobiera dane z formularza i wyświetla je w formie alertu, a także sprawdza czy pole specjalizacja jest wypełnione oraz czy data nie jest wcześniejsza niż dzisiaj.
+    parametry: brak
+    zwracany typ i opis: brak 
+    autor: Wiktor Mańkut
+    ************************************************
+    */

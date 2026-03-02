@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+        <Label 
+            Text="Rozmiar Pizzy: "/>
+        <HorizontalStackLayout>
+            <RadioButton Content="Mała (25 cm) - 20zł" Value="20" GroupName="Rozmiar" CheckedChanged="RozmiarChange"/>
+            <RadioButton Content="Średnia (32 cm) - 28zł" Value="28" GroupName="Rozmiar" CheckedChanged="RozmiarChange"/>
+            <RadioButton Content="Duża (45 cm) - 38zł" Value="38" GroupName="Rozmiar" CheckedChanged="RozmiarChange"/>
+        </HorizontalStackLayout>
+        <Label 
+                Text="Rodzaj ciasta: "/>
+        <HorizontalStackLayout>
+            <RadioButton Content="Cienkie" GroupName="Ciasto" CheckedChanged="CiastoChange"/>
+            <RadioButton Content="Grube" GroupName="Ciasto" CheckedChanged="CiastoChange"/>
+            <RadioButton Content="Z serem w brzegu (+5zł)" GroupName="Ciasto" CheckedChanged="CiastoChange"/>
+        </HorizontalStackLayout>
+        <Label 
+                Text="{Binding Source={x:Reference Ilosc}, Path=Value, StringFormat='{}Ilość sztuk pizzy {0:0}'}"/>
+        <Stepper x:Name="Ilosc"
+         Minimum="1"
+         Maximum="10"
+         Increment="1"
+         Value="1"
+         ValueChanged="StepperChange"/>
+        <Label 
+                Text="Godzina dostawy: "/>
+        <TimePicker
+                BackgroundColor="Azure"
+                x:Name="GodzinaDostawy"
+                Format="HH:mm"
+                Time="18:00:00"
+                TextColor="BurlyWood"/>
+        <Label 
+            x:Name="Cena"/>
+    </VerticalStackLayout>
+</ContentPage>
