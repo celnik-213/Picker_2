@@ -19,6 +19,10 @@
             Title="19.4"
             ContentTemplate="{DataTemplate local:NewPage2}"
             Route="19.4" />
+        <ShellContent
+            Title="20.2"
+            ContentTemplate="{DataTemplate local:NewPage3}"
+            Route="20.2" />
     </TabBar>
 
 </Shell>

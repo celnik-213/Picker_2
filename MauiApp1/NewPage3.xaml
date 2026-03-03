@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage3"
+             Title="NewPage3">
+    <VerticalStackLayout
+        x:Name="Zdjecia">
+        <Image Source="dotnet_bot.png"
+               Aspect="AspectFit"
+               HeightRequest="200" />
+
+        <Image>
+            <Image.Source>
+                <UriImageSource CacheValidity="7:00:00:00" Uri="https://scontent-waw2-1.xx.fbcdn.net/v/t39.30808-6/606469165_25469967755964868_1245493480733488020_n.jpg?_nc_cat=108&amp;ccb=1-7&amp;_nc_sid=13d280&amp;_nc_ohc=nXZvljk_vL0Q7kNvwGS396u&amp;_nc_oc=AdlKntPd4kVQy3BcG7jG12HZX9VBDjQxXWEBYBeL6P0ErrBwUS88IEWLhK1XyjR9IPw&amp;_nc_zt=23&amp;_nc_ht=scontent-waw2-1.xx&amp;_nc_gid=L_Ix5omFINzRLB4mBvUsEg&amp;_nc_ss=8&amp;oh=00_Afywm2277LhD-1DhUFedmAM3ox5Q5qphw2WUB_AsCmBr8g&amp;oe=69AC8DE6"/>
+            </Image.Source>
+            <Image.HeightRequest>200</Image.HeightRequest>
+            <Image.Aspect>AspectFit</Image.Aspect>
+        </Image>
+    </VerticalStackLayout>
+</ContentPage>
