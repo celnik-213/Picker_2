@@ -26,4 +26,20 @@ public partial class NewPage3 : ContentPage
 		Zdjecia.Children.Add(Image);
 		Zdjecia.Children.Add(Image2);
     }
+    void OnOsiolClicked(object sender, EventArgs e)
+    {
+        if (Shrekgif.Aspect == Aspect.AspectFit)
+        {
+            Shrekgif.Aspect = Aspect.Fill;
+        }
+        else if (Shrekgif.Aspect == Aspect.Fill)
+        {
+            Shrekgif.Aspect = Aspect.AspectFill;
+        }
+        else if (Shrekgif.Aspect == Aspect.AspectFill)
+        {
+            Shrekgif.Aspect = Aspect.AspectFit;
+        }
+        AspectLabel.Text = $"Aktualny tryb wyœwietlania: {Shrekgif.Aspect}";
+    }
 }
