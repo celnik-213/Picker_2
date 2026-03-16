@@ -64,3 +64,43 @@ public partial class NewPage2 : ContentPage
 
     }
 }
+
+/*
+***********************************************
+    nazwa funkcji: Register
+    opis funkcji: Funkcja obsługuje zdarzenie kliknięcia przycisku rejestracji. 
+    Sprawdza czy pola imienia i nazwiska, adresu email oraz wybór elementu 
+    w kontrolce Picker zostały wypełnione. Jeśli wszystkie pola są poprawne 
+    wyświetla komunikat z informacją o udanej rejestracji wraz z wybraną opcją 
+    oraz obliczoną ceną całkowitą. W przeciwnym przypadku wyświetla komunikat 
+    o konieczności uzupełnienia wszystkich pól formularza.
+    parametry: sender – obiekt wywołujący zdarzenie
+               e – dane zdarzenia
+    zwracany typ i opis: Brak
+    autor: Wiktor & ChatGPT
+************************************************
+***********************************************
+    nazwa funkcji: calculatePrice
+    opis funkcji: Funkcja oblicza całkowitą cenę wybranego pakietu. 
+    Pobiera wybrany pakiet z ViewModelu (Basic, Standard, Premium) 
+    i na jego podstawie ustala cenę bazową. Następnie odczytuje 
+    liczbę dodatkowych osób z kontrolki Stepper i oblicza koszt 
+    dodatkowy (100 zł za osobę). Wynik końcowy jest zapisywany 
+    w zmiennej totalPrice oraz wyświetlany w kontrolce Label.
+    parametry: sender – obiekt wywołujący zdarzenie
+               e – dane zdarzenia
+    zwracany typ i opis: Brak
+    autor: Wiktor & ChatGPT
+************************************************
+***********************************************
+    nazwa funkcji: OnPropertyChanged
+    opis funkcji: Funkcja informuje mechanizm powiązań danych 
+    (data binding) o zmianie wartości właściwości w ViewModelu. 
+    Wywołuje zdarzenie PropertyChanged przekazując nazwę zmienionej 
+    właściwości, dzięki czemu interfejs użytkownika może zostać 
+    automatycznie zaktualizowany.
+    parametry: propertyName – nazwa właściwości, której wartość uległa zmianie
+    zwracany typ i opis: Brak
+    autor: Wiktor & ChatGPT
+************************************************
+*/
