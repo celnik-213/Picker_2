@@ -40,6 +40,15 @@ public partial class NewPage3 : ContentPage
         {
             Shrekgif.Aspect = Aspect.AspectFit;
         }
-        AspectLabel.Text = $"Aktualny tryb wy�wietlania: {Shrekgif.Aspect}";
+        AspectLabel.Text = $"Aktualny tryb wyœwietlania: {Shrekgif.Aspect}";
     }
 }
+/*
+***********************************************
+    nazwa funkcji: OnOsiolClicek
+    opis funkcji: Funckaj obsługuje zmianę wartości Aspect pomiędzy Aspect.Fill Aspect.AspectFill oraz Aspect.AspectFit po naciśnięciu na zdjęcie.
+    parametry: Brak
+    zwracany typ i opis: Brak
+    autor: Wiktor
+************************************************
+*/
