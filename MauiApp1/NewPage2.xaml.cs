@@ -77,7 +77,7 @@ public partial class NewPage2 : ContentPage
     parametry: sender – obiekt wywołujący zdarzenie
                e – dane zdarzenia
     zwracany typ i opis: Brak
-    autor: Wiktor & ChatGPT
+    autor: Wiktor
 ************************************************
 ***********************************************
     nazwa funkcji: calculatePrice
@@ -90,7 +90,7 @@ public partial class NewPage2 : ContentPage
     parametry: sender – obiekt wywołujący zdarzenie
                e – dane zdarzenia
     zwracany typ i opis: Brak
-    autor: Wiktor & ChatGPT
+    autor: Wiktor
 ************************************************
 ***********************************************
     nazwa funkcji: OnPropertyChanged
@@ -101,6 +101,6 @@ public partial class NewPage2 : ContentPage
     automatycznie zaktualizowany.
     parametry: propertyName – nazwa właściwości, której wartość uległa zmianie
     zwracany typ i opis: Brak
-    autor: Wiktor & ChatGPT
+    autor: Wiktor
 ************************************************
 */
